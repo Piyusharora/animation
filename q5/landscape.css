@@ -1,0 +1,184 @@
+
+
+#divLandscape{
+    display:block;
+    width:200px;
+    height:200px;
+    margin-top:300px;            
+    margin-left:600px;            
+    z-index: 20;
+}
+
+#divHillMain{
+    display:block;
+    width:300px;
+    height: 100px;            
+    background-color: rgb(63, 106, 141);
+    z-index: 10;
+}
+
+.hill{
+    position: fixed;
+    display:block;
+    background-color: rgb(63, 106, 141);
+    border: 1px solid black;
+    transform: rotate(45deg);
+    width:60px;
+    height:60px;
+}
+
+.hill1{
+    margin-left:15px;
+    margin-top:-15px;
+    z-index: -10;
+}
+.hill2{
+    margin-left:150px;
+    margin-top:-25px;
+    z-index: -10;
+}
+.hill3{
+    width:90px;
+    height:90px;
+    margin-left:80px;
+    margin-top:-45px;
+    z-index: -11;
+}
+.hill4{
+    width:90px;
+    height:90px;
+    margin-left:180px;
+    margin-top:-40px;
+    z-index: -12;
+}
+
+
+
+.cloud{
+    position: fixed;
+    display:block;
+    width: 60px;
+    height:30px;
+    background-color: rgb(124, 122, 122);
+    z-index: 10;
+}
+
+.cloud1{
+    margin-left:10px;
+    margin-top:-70px;
+    animation: slide1 18.5s ease-in-out alternate infinite;
+}
+
+@keyframes slide1{
+    from {margin-left: 10px;}
+    to {margin-left: 160px;}
+}
+
+.cloud2{
+    margin-left:180px;
+    margin-top:-95px;
+    animation: slide2 28.5s ease-in-out alternate infinite;
+}
+
+@keyframes slide2{
+    from {margin-left: 20px;}
+    to {margin-left: 200px;}
+}
+
+.cloud-circle{
+    border-radius: 50%;
+    background-color: rgb(124, 121, 121);
+    position: fixed;
+    display:block;
+    width: 25px;
+    height:25px;
+}
+
+.cloud-circle1{
+    width: 30px;
+    height:30px;
+    margin-left:38px;
+    margin-top:-8px;
+}
+.cloud-circle2{
+    margin-left:48px;
+    margin-top:5px;
+}
+.cloud-circle3{
+    width: 30px;
+    height:30px;
+    margin-left:18px;
+    margin-top:-18px;
+}
+.cloud-circle4{
+    width: 30px;
+    height:30px;
+    margin-left:-13px;
+    margin-top:0px;
+}
+.cloud-circle5{
+    width: 30px;
+    height:30px;
+    margin-left:0px;
+    margin-top:-15px;
+}
+
+.sky{
+    position: fixed;
+    display:block;
+    width: 300px;
+    height:220px;
+    background-color: rgb(248, 249, 250);
+    margin-top: -150px;
+    z-index: -25;
+    animation-name: sky-color;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+@keyframes sky-color {
+    0% {
+        background: rgb(241, 243, 245);
+    }
+    
+    100% {
+        background: rgb(243, 244, 245);
+    }
+    
+}
+
+.spinner{
+    position: fixed;
+    display:block;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin-top: -150px;
+    z-index: -20;
+    animation-name: spinner-move;
+    animation-duration:35s;     
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner-move {
+    0%{ bottom:150px; left:500px}
+50%  {bottom:360px;left:500x}
+100% {bottom:150px;left:500px}
+
+}
+
+.sun{
+    position: fixed;
+    display:block;
+    width: 30px;
+    height:30px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left:268px;
+    margin-top:120px;
+    z-index: -25;
+}

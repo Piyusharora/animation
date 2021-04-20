@@ -1,0 +1,32 @@
+
+
+.box1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    margin: auto;
+    animation-name: box1;
+    animation-duration: 4s;
+    margin-top: 200px;
+  }
+  .box2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: rgb(250, 9, 218);;
+    animation-name: box2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;  
+  }
+  
+  @keyframes box2 {
+    0%   {left:0px; top:-100px;}
+    
+    50%  {left:1300px; top:-100px;}
+  
+    100% {left:0px; top:-100px;}
+    
+  }
+  @keyframes box1 {
+  }
